@@ -15,6 +15,7 @@
 
 <p align="center">
   <a href="#quick-how-to">Quick how-to</a> &nbsp;&bull;&nbsp;
+  <a href="#screenshots">Screenshots</a> &nbsp;&bull;&nbsp;
   <a href="#prerequisites">Prerequisites</a> &nbsp;&bull;&nbsp;
   <a href="#setup--deployment">Setup &amp; deployment</a> &nbsp;&bull;&nbsp;
   <a href="#local-development">Local development</a> &nbsp;&bull;&nbsp;
@@ -39,6 +40,20 @@ The interface includes a pinned connection toolbar, collapsed-by-default workspa
 
 > [!IMPORTANT]
 > **This app upgrades in place.** Gen1 is replaced with Gen2 and the original ID is retained. It does not keep a separate Gen1 copy or provide rollback. If you need to preserve the original, use a separate save-as migration approach instead. Review Microsoft's [upgrade prerequisites and limitations][upgrade-guide] before proceeding.
+
+## Screenshots
+
+### Migration workbench
+
+Discover workspaces and dataflows, review readiness verdicts and API reasons, and select candidates for migration.
+
+![Migration workbench showing workspace inventory, readiness totals, filters, and per-dataflow assessment reasons](docs/screenshots/migration-workbench.png)
+
+### Migration history
+
+Review assessments and upgrades with request IDs, outcomes, Gen2 verification status, and access to retained API results.
+
+![Migration history showing assessment and upgrade records, completed outcomes, tracking status, and audit export](docs/screenshots/migration-history.png)
 
 ## Quick how-to
 
