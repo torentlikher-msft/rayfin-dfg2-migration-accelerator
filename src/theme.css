@@ -1,0 +1,53 @@
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  color: #ececec;
+  background: #333333;
+  --teal: #91dbc9;
+  --teal-dark: #b2ebdd;
+  --muted: #c0c0c0;
+  --line: #606060;
+  --shadow: 0 2px 6px #20202020;
+}
+:root[data-theme='dark'] :is(.toolbar, .sidebar, .metric, .workbench-card, .inventory-controls, .dialog, .dialog-header) {
+  color: inherit;
+  background: #404040;
+  border-color: var(--line);
+}
+:root[data-theme='dark'] :is(.fabric-bar, .dialog-footer, .workspace-header, .inventory-table th, .table-footer, .stage-pill, .live-api-json) {
+  background: #3b3b3b;
+  color: #cdcdcd;
+  border-color: var(--line);
+}
+:root[data-theme='dark'] :is(.button, .search-box, .filter-bar > select, input[type='checkbox']) {
+  background: #4a4a4a;
+  color: #ececec;
+  border-color: #7a7a7a;
+}
+:root[data-theme='dark'] .search-box input { color: #ececec; }
+:root[data-theme='dark'] input::placeholder { color: #c6c6c6; }
+:root[data-theme='dark'] :is(.button, .icon-button, .nav-item):hover:not(:disabled) { background: #585858; color: #f4f4f4; }
+:root[data-theme='dark'] .button.primary { background: #2b7567; border-color: #79b9a9; color: white; }
+:root[data-theme='dark'] .button.primary:hover:not(:disabled) { background: #2e7d6e; }
+:root[data-theme='dark'] :is(input[type='checkbox']:checked, input[type='checkbox']:indeterminate) { background: #2b7567; border-color: #91dbc9; }
+:root[data-theme='dark'] :is(button, a, input, select):focus-visible { outline-color: #91dbc9; }
+:root[data-theme='dark'] :is(.preview-label, .bar-divider, .workspace-group, .inventory-table td, .live-result-item) { border-color: var(--line); }
+:root[data-theme='dark'] :is(.nav-item, .icon-button, .breadcrumb, .breadcrumb svg, .page-heading p, .metric-heading, .metric-foot, .inventory-heading p, .card-tabs-note, .tab, .workspace-count, .muted, .flow-name small, .history-request-id, .live-request-id, .live-history-more small, .detail-list dt, .dialog-body > p, .review-intro p, .live-banner small, .preview-label, .app-brand small, .nav-label, .powered small, .environment, .sidebar-bottom p) { color: #c0c0c0; }
+:root[data-theme='dark'] :is(.fabric-brand > span:nth-child(2), .breadcrumb strong, .empty-state h3) { color: #ececec; }
+:root[data-theme='dark'] .empty-state { color: #c7c7c7; }
+:root[data-theme='dark'] :is(.nav-item.active, .selection-bar, .inventory-table tr.selected-row, .teal, .dataflow-icon, .review-icon, .avatar) {
+  background: #31534f;
+  color: #a7e6d6;
+  border-color: #527b70;
+}
+:root[data-theme='dark'] :is(.nav-count, .tab > span) { background: #565656; color: #e0e0e0; }
+:root[data-theme='dark'] .rayfin-dot { background: #514b67; color: #e2d5f7; }
+:root[data-theme='dark'] :is(.demo-banner, .notice-banner) { background: #324e48; color: #c6dfd3; border-color: #55776a; }
+:root[data-theme='dark'] .demo-banner strong { color: #d0e9dd; }
+:root[data-theme='dark'] .badge.success { background: #304e45; color: #b2e5c4; border-color: #577866; }
+:root[data-theme='dark'] :is(.badge.warning, .review-warning, .workspace-lock) { background: #514938; color: #f4d791; border-color: #81704b; }
+:root[data-theme='dark'] .review-warning p { color: #eddaad; }
+:root[data-theme='dark'] :is(.badge.danger, .error-banner) { background: #563e43; color: #ffc5c1; border-color: #8e5f65; }
+:root[data-theme='dark'] .badge.neutral { background: #494949; color: #d6d6d6; border-color: #6b6b6b; }
+:root[data-theme='dark'] :is(.workspace-icon, .workspace-ready, .assessment-progress, .tracking-indicator) { color: #a1decb; }
+:root[data-theme='dark'] .tracking-warning { color: #f4d791; }
+:root[data-theme='dark'] .brand-mark { background: #494949; color: var(--teal); border-color: var(--line); }

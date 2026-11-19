@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84">
+  <title>Dataflow Migration Studio</title>
+  <defs>
+    <linearGradient id="flow" x1="14" y1="8" x2="60" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ac83de"/>
+      <stop offset="1" stop-color="#7947b1"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="42" y1="42" x2="65" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffdd35"/>
+      <stop offset="1" stop-color="#ffb800"/>
+    </linearGradient>
+  </defs>
+  <path d="M22 18v48m0-16v-4a12 12 0 0 1 12-12h6a13 13 0 0 0 13-13v-3" fill="none" stroke="url(#flow)" stroke-width="8" stroke-linecap="round"/>
+  <g fill="url(#flow)">
+    <circle cx="22" cy="18" r="11"/>
+    <circle cx="53" cy="18" r="11"/>
+    <circle cx="22" cy="66" r="11"/>
+  </g>
+  <path d="M49 40h22L58 56h15L42 78l8-18H34z" fill="url(#bolt)" stroke="#fff4d1" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>

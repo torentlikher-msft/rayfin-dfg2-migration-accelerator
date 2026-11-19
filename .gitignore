@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env.local
+.env.*.local
+rayfin/.env
+rayfin/.deployments.json
+rayfin/.temp/
+playwright-report/
+test-results/
+*.tsbuildinfo
+notebooks/

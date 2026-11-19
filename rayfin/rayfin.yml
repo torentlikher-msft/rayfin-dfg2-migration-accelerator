@@ -1,0 +1,34 @@
+id: dfg2-migration-studio
+name: Dataflow Migration Studio
+version: 0.1.0
+services:
+  auth:
+    enabled: true
+    allowedRedirectUris:
+      - http://localhost:5173
+      - http://127.0.0.1:5173
+      - http://localhost:5174
+      - http://127.0.0.1:5174
+      - https://handy-blaze-3228ea0dd0-westus3.webapp.fabricapps.net
+    fabric:
+      enabled: true
+      externalEntraExchange: true
+  data:
+    enabled: true
+    dialect: mssql
+  staticHosting:
+    enabled: true
+    folder: dist
+    buildCommand: npm run build:fabric
+    indexDocument: index.html
+    assetAccess: public
+  storage:
+    enabled: false
+  functions:
+    enabled: true
+    buildCommand: npm run build
+    auth:
+      type: application
+secrets:
+  - name: USER_DELEGATION_PRIVATE_KEY
+    description: "Encrypts short-lived, caller-bound Microsoft delegation envelopes."
